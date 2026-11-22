@@ -4,6 +4,8 @@ metadata:
   name: portfolio-website
   labels:
     app: portfolio-website
+    app.kubernetes.io/name: portfolio-website
+    app.kubernetes.io/instance: portfolio-website
 spec:
   type: ClusterIP
   ports:

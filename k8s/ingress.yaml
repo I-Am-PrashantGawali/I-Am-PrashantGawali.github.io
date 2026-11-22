@@ -2,6 +2,10 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: portfolio-website-ingress
+  labels:
+    app: portfolio-website
+    app.kubernetes.io/name: portfolio-website
+    app.kubernetes.io/instance: portfolio-website
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
